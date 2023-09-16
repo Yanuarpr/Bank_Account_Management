@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Bank Account Management</title>
+</head>
+<body>
+    <h1>Bank Account Management</h1>
+    
+    <div id="accountInfo">
+        <h2>Account Information</h2>
+        <p>Account Holder: <span id="accountHolder"></span></p>
+        <p>Account Type: <span id="accountType"></span></p>
+        <p>Balance: $<span id="balance"></span></p>
+    </div>
+    
+    <div id="transactionForm">
+        <h2>Transactions</h2>
+        <label for="transactionType">Select Transaction Type:</label>
+        <select id="transactionType">
+            <option value="deposit">Deposit</option>
+            <option value="withdraw">Withdraw</option>
+            <option value="checkBalance">Check Balance</option>
+        </select>
+        <br>
+        <label for="amount">Enter Amount:</label>
+        <input type="number" id="amount" placeholder="Amount">
+        <br>
+        <button onclick="performTransaction()">Submit</button>
+    </div>
+    
+</body>
+</html>
